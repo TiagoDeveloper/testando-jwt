@@ -56,9 +56,8 @@ public class ExtractUserIdInterceptor {
 
         }catch(Throwable ex) {
             log.error("Deu ruim", ex.fillInStackTrace());
+            throw new RuntimeException("Deu ruim");
         }
-
-        return null;
     }
 
     private String extract(String jwt, String claimName) throws IOException {
