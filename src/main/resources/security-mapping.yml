@@ -1,0 +1,12 @@
+
+
+entry-point:
+  mapping:
+    - path: /home
+      roles: ADMIN, USER
+    - path: /user
+      roles: ADMIN
+    - path: /payment
+      roles: USER
+    - path: /calc
+      roles: ADMIN
